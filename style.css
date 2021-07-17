@@ -24,8 +24,8 @@ ul {
   --header-height: 4.5rem;
 
   /* HSL color mode */
-  --hue: 159;
-  --base-color: hsl(var(--hue) 36% 57%);
+  --hue: 39;
+  --base-color: hsl(var(--hue) 90% 50%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
@@ -83,9 +83,17 @@ body {
 .logo {
   color: var(--title-color);
   font: 700 1.31rem var(--title-font);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
-.logo span {
+.logo span.first {
   color: var(--base-color);
+  font-size: 2.62rem;
+}
+
+.logo span {
+  font-size: 2.62rem;
 }
 
 .logo-alt span {
@@ -389,35 +397,35 @@ nav.show div.icon-close {
 
 /* ---------testimonials----------------- */
 
-#testimonials {
+#videos {
   background: white;
 }
 
-#testimonials .container {
+#videos .container {
   margin-left: 0;
   margin-right: 0;
 }
 
-#testimonials header {
+#videos header {
   margin-left: 1.5rem;
   margin-right: 1, 5rem;
   margin-bottom: 0;
 }
 
-#testimonials blockquote {
+#videos blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
 }
 
-#testimonials blockquote p {
+#videos blockquote p {
   position: relative;
   text-indent: 1.875rem;
   margin-bottom: 1.5rem;
   color: var(--title-color);
 }
 
-#testimonials blockquote p span {
+#videos blockquote p span {
   font: 700 2.5rem serif;
 
   position: absolute;
@@ -426,13 +434,13 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-#testimonials cite {
+#videos cite {
   display: flex;
   align-items: center;
   font-style: normal;
 }
 
-#testimonials cite img {
+#videos cite img {
   width: 2rem;
   height: 2rem;
   object-fit: cover;

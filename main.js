@@ -29,7 +29,7 @@ function changeHeaderWhenScroll() {
   }
 }
 
-// testimonials carousel with swiper
+// video carousel with swiper
 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
