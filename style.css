@@ -395,7 +395,7 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/* ---------testimonials----------------- */
+/* ---------videos----------------- */
 
 #videos {
   background: white;
@@ -572,7 +572,7 @@ footer .social a:hover {
   }
 
   .section header,
-  #testimonials header {
+  #videos header {
     max-width: 32rem;
     text-align: center;
     margin-left: auto;
@@ -650,9 +650,9 @@ footer .social a:hover {
     padding-right: 3rem;
   }
 
-  /* testimonials */
+  /* videos */
 
-  #testimonials .container {
+  #videos .container {
     margin-left: auto;
     margin-right: auto;
   }
