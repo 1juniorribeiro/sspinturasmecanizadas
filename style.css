@@ -81,23 +81,22 @@ body {
 /* ---------logo----------------- */
 
 .logo {
-  color: var(--title-color);
-  font: 700 1.31rem var(--title-font);
   display: flex;
   align-items: center;
   gap: 0.25rem;
-}
-.logo span.first {
-  color: var(--base-color);
-  font-size: 2.62rem;
-}
-
-.logo span {
-  font-size: 2.62rem;
+  max-width: 9.375rem;
+  max-height: 6.25rem;
+  width: auto;
+  height: auto;
 }
 
-.logo-alt span {
-  color: var(--body-color);
+.logo-alt {
+  display: flex;
+  align-items: center;
+  max-width: 15.625rem;
+  max-height: 12.25rem;
+  width: auto;
+  height: auto;
 }
 
 /* ---------navigation----------------- */
@@ -397,10 +396,6 @@ nav.show div.icon-close {
 
 /* ---------videos----------------- */
 
-#videos {
-  background: white;
-}
-
 #videos .container {
   margin-left: 0;
   margin-right: 0;
@@ -412,40 +407,24 @@ nav.show div.icon-close {
   margin-bottom: 0;
 }
 
-#videos blockquote {
-  padding: 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
-}
-
-#videos blockquote p {
+.video {
+  overflow: hidden;
   position: relative;
-  text-indent: 1.875rem;
-  margin-bottom: 1.5rem;
-  color: var(--title-color);
+  width: 100%;
 }
 
-#videos blockquote p span {
-  font: 700 2.5rem serif;
+.video::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
 
+.video iframe {
   position: absolute;
-  top: -0.375rem;
-  left: -1.875rem;
-  color: var(--base-color);
-}
-
-#videos cite {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-}
-
-#videos cite img {
-  width: 2rem;
-  height: 2rem;
-  object-fit: cover;
-  clip-path: circle();
-  margin-right: 0.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* swiper */
@@ -457,6 +436,9 @@ nav.show div.icon-close {
 
 .swiper-pagination-bullet-active {
   background: var(--base-color);
+  width: 3rem;
+  height: 1rem;
+  border-radius: 0.5rem;
 }
 
 /* ---------contact----------------- */
@@ -583,6 +565,11 @@ footer .social a:hover {
     height: 3.125rem;
   }
 
+  .logo {
+    max-width: 200px;
+    max-height: 150px;
+  }
+
   /* navigation */
 
   nav .menu {
@@ -678,10 +665,6 @@ footer .social a:hover {
     grid-auto-flow: column;
     align-items: center;
     justify-content: space-between;
-  }
-
-  footer .logo {
-    font-size: 2.25rem;
   }
 }
 /* large devices: 1023 > */
