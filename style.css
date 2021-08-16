@@ -93,8 +93,8 @@ body {
 .logo-alt {
   display: flex;
   align-items: center;
-  max-width: 15.625rem;
-  max-height: 12.25rem;
+  max-width: 14.625rem;
+  max-height: 11.25rem;
   width: auto;
   height: auto;
 }
